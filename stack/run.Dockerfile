@@ -20,3 +20,4 @@ RUN echo "debconf debconf/frontend select noninteractive" | debconf-set-selectio
     /var/lib/apt/lists/* /tmp/*
 
 RUN groupadd cnbg --gid ${CNB_GROUP_ID} && useradd -m --gid ${CNB_GROUP_ID} --uid ${CNB_USER_ID} cnb
+USER ${CNB_USER_ID}:${CNB_GROUP_ID}
