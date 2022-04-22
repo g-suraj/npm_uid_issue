@@ -1,3 +1,5 @@
+# Adapted from https://github.com/paketo-buildpacks/stacks/tree/main/bionic
+# Adapted from https://github.com/paketo-buildpacks/stacks/tree/main/bionic
 FROM ubuntu:bionic
 
 LABEL io.buildpacks.stack.id="io.buildpacks.stacks.bionic"
