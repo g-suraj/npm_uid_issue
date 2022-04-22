@@ -1,0 +1,13 @@
+[[buildpacks]]
+uri = "docker://gcr.io/paketo-buildpacks/nodejs:0.17.1"
+
+[[order]]
+
+  [[order.group]]
+    id = "paketo-buildpacks/nodejs"
+    version = "0.17.1"
+
+[stack]
+  id = "io.buildpacks.stacks.bionic"
+  build-image = "testing/local_stack/buildbase"
+  run-image = "testing/local_stack/runbase"
